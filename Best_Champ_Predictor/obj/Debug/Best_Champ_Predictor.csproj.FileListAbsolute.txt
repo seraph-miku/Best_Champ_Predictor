@@ -1,0 +1,10 @@
+C:\Users\Miku\source\repos\Best_Champ_Predictor\Best_Champ_Predictor\bin\Debug\Best_Champ_Predictor.exe.config
+C:\Users\Miku\source\repos\Best_Champ_Predictor\Best_Champ_Predictor\bin\Debug\Best_Champ_Predictor.exe
+C:\Users\Miku\source\repos\Best_Champ_Predictor\Best_Champ_Predictor\bin\Debug\Best_Champ_Predictor.pdb
+C:\Users\Miku\source\repos\Best_Champ_Predictor\Best_Champ_Predictor\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Miku\source\repos\Best_Champ_Predictor\Best_Champ_Predictor\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Miku\source\repos\Best_Champ_Predictor\Best_Champ_Predictor\obj\Debug\Best_Champ_Predictor.csproj.CopyComplete
+C:\Users\Miku\source\repos\Best_Champ_Predictor\Best_Champ_Predictor\obj\Debug\Best_Champ_Predictor.exe
+C:\Users\Miku\source\repos\Best_Champ_Predictor\Best_Champ_Predictor\obj\Debug\Best_Champ_Predictor.pdb
+C:\Users\Miku\source\repos\Best_Champ_Predictor\Best_Champ_Predictor\obj\Debug\Best_Champ_Predictor.csprojAssemblyReference.cache
+C:\Users\Miku\source\repos\Best_Champ_Predictor\Best_Champ_Predictor\obj\Debug\Best_Champ_Predictor.csproj.CoreCompileInputs.cache

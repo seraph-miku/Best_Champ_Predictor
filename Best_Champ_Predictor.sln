@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Best_Champ_Predictor", "Best_Champ_Predictor\Best_Champ_Predictor.csproj", "{F102C55F-ADFF-4941-B4F8-3F374CA2B267}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F102C55F-ADFF-4941-B4F8-3F374CA2B267}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F102C55F-ADFF-4941-B4F8-3F374CA2B267}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F102C55F-ADFF-4941-B4F8-3F374CA2B267}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F102C55F-ADFF-4941-B4F8-3F374CA2B267}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7AE90ADB-B6F5-4214-9083-74412C5D10E9}
+	EndGlobalSection
+EndGlobal

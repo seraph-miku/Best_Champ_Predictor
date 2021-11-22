@@ -136,9 +136,9 @@ namespace Best_Champ_Predictor
         private string[] WinrateQueryBuilder(int championIndex)
         {
             string[] winrateQuery = new string[2];
-            winrateQuery[0] = "https://apix1.op.lol/mega/?ep=champion&p=d&v=8&patch=" + _winrateQueryPatch + "&cid=" + _championID[championIndex] + "&lane="
+            winrateQuery[0] = "https://axe.lolalytics.com/mega/?ep=champion&p=d&v=1&patch=" + _winrateQueryPatch + "&cid=" + _championID[championIndex] + "&lane="
                                + _winrateQueryRole + "&tier=" + _winrateQueryTier + "&queue=420&region=" + _winrateQueryRegion;
-            winrateQuery[1] = "https://apix1.op.lol/mega/?ep=champion2&p=d&v=8&patch=" + _winrateQueryPatch + "&cid=" + _championID[championIndex] + "&lane="
+            winrateQuery[1] = "https://axe.lolalytics.com/mega/?ep=champion2&p=d&v=1&patch=" + _winrateQueryPatch + "&cid=" + _championID[championIndex] + "&lane="
                                + _winrateQueryRole + "&tier=" + _winrateQueryTier + "&queue=420&region=" + _winrateQueryRegion;
             return winrateQuery;
         }

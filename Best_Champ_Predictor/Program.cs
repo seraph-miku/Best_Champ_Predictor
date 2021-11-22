@@ -49,7 +49,7 @@ namespace Best_Champ_Predictor
         {
             int height = Screen.PrimaryScreen.Bounds.Height;
             int width = Screen.PrimaryScreen.Bounds.Width;
-            Console.SetWindowSize(width / 30, height / 15);
+            //Console.SetWindowSize(width / 30, height / 15);
         }
 
         /// <summary>

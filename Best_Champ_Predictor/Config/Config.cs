@@ -38,7 +38,7 @@ namespace Best_Champ_Predictor
 
         //Import Configurations
 
-        public static string CurrentPatch = "11.10.1";
+        public static string CurrentPatch = "11.22.1";
         public static string CurrentRole = Constants.Support;
         public static string CurrentPatchQuery = "14";
         public static string CurrentTier = "platinum_plus";

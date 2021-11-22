@@ -16,7 +16,7 @@ namespace Best_Champ_Predictor
         private static double[] jungleImpact = new double[10] { 0.1d, 0.2d, 0.1d, 0.1d, 0.1d, 0.1d, 0d, 0.1d, 0.1d, 0.1d };
         private static double[] midImpact = new double[10] { 0.05d, 0.2d, 0.3d, 0.05d, 0.05d, 0.05d, 0.2d, 0d, 0.05d, 0.05d };
         private static double[] botImpact = new double[10] { 0.04d, 0.12d, 0.08d, 0.2d, 0.16d, 0.04d, 0.12d, 0.08d, 0d, 0.16d };
-        private static double[] suppImpact = new double[10] { 0.04d, 0.12d, 0.08d, 0.16d, 0.2d, 0.04d, 0.08d, 0.12d, 0.16d, 0d };
+        private static double[] suppImpact = new double[10] { 1 / 9d, 1 / 9d, 1 / 9d, 1 / 9d, 1 / 9d, 1 / 9d, 1 / 9d, 1 / 9d, 1 / 9d, 0d };
 
         #endregion ImpactByOtherLanesBasedOnRole
 

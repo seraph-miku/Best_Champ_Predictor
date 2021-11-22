@@ -1,5 +1,5 @@
 support
 30
-platinum_plus
-all
-50000
+diamond_plus
+euw
+1000

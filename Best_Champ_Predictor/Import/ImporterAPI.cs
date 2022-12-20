@@ -116,7 +116,10 @@ namespace Best_Champ_Predictor
                     string winrateRequest = wb.DownloadString(winrateQuery[0]);
 
                     if (winrateRequest == "")                                                         //Manche Champions werden so selten auf einer Rolle gespielt, dass keine JSON-Datei von Lolalytics zurückkommt
+                    {
+                        _winrateRequests.Add("NULL");
                         return false;
+                    }
 
                     winrateRequest = winrateRequest.Substring(0, winrateRequest.Length - 1) + ",";      //ersetzt die letzte geschweifte Klammer des angekommenen JSON durch ein Komma, um beide Anfragen in eine zu verbinden
                     string secondRequest = wb.DownloadString(winrateQuery[1]);

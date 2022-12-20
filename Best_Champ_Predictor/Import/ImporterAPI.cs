@@ -85,7 +85,7 @@ namespace Best_Champ_Predictor
         /// </summary>
         private void ChampionQuery()
         {
-            string championQueryAddress = "https://cdn.op.lol/v/" + Config.CurrentPatch + "/tooltip/eng/champion.json";
+            string championQueryAddress = "https://cdn.lolalytics.com/v/current/tooltip/eng/champion.json";
 
             using (var wb = new WebClient())
             {

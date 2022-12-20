@@ -179,12 +179,20 @@ namespace Best_Champ_Predictor
             for (int i = 0; i < _champions.Count; i++)
             {
                 string winrateQueryResponseFile = Memory.RoleFolderQueriesPath + "\\" + _champions[i] + "_" + Config.CurrentPatch + ".txt";
-                WinrateQuery(i);
-
-                using (StreamWriter writer = new StreamWriter(winrateQueryResponseFile))
-                {
-                    writer.WriteLine(_winrateRequests[i]);
-                    Console.WriteLine("File '" + winrateQueryResponseFile + "' created.");
+                
+                if(WinrateQuery(i)){
+                    using (StreamWriter writer = new StreamWriter(winrateQueryResponseFile))
+                    {
+                        writer.WriteLine(_winrateRequests[i]);
+                        Console.WriteLine("File '" + winrateQueryResponseFile + "' created.");
+                    }
+                }
+                else{
+                    using (StreamWriter writer = new StreamWriter(winrateQueryResponseFile))
+                    {
+                        writer.WriteLine("NULL");
+                        Console.WriteLine("File '" + winrateQueryResponseFile + "' created.");
+                    }
                 }
             }
         }

@@ -128,6 +128,8 @@ namespace Best_Champ_Predictor
                 using (StreamReader r = new StreamReader(file.FullName))
                 {
                     string json = r.ReadToEnd();
+                    if (json == "NULL\r\n")
+                        return;
                     Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(json);
                     JObject parsed = JObject.Parse(json);
 

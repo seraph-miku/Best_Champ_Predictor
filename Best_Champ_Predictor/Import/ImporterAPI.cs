@@ -105,7 +105,7 @@ namespace Best_Champ_Predictor
         /// Sendet 2 Anfragen zu einem Champion an die LolalyticsAPI und fügt die beiden Antworten zu einem String zusammen
         /// </summary>
         /// <param name="championIndex">die ChampionID (von Lolalytics in der champions.json erzeugt) zu dem zugehörigen Champion</param>
-        private void WinrateQuery(int championIndex)
+        private bool WinrateQuery(int championIndex)
         {
             string[] winrateQuery = WinrateQueryBuilder(championIndex);
 
@@ -114,16 +114,22 @@ namespace Best_Champ_Predictor
                 try
                 {
                     string winrateRequest = wb.DownloadString(winrateQuery[0]);
+
+                    if (winrateRequest == "")                                                         //Manche Champions werden so selten auf einer Rolle gespielt, dass keine JSON-Datei von Lolalytics zurückkommt
+                        return false;
+
                     winrateRequest = winrateRequest.Substring(0, winrateRequest.Length - 1) + ",";      //ersetzt die letzte geschweifte Klammer des angekommenen JSON durch ein Komma, um beide Anfragen in eine zu verbinden
                     string secondRequest = wb.DownloadString(winrateQuery[1]);
                     winrateRequest += secondRequest.Substring(1);
                     _winrateRequests.Add(winrateRequest);
+                    return true;
                 }
                 catch (Exception exp)
                 {
                     Console.WriteLine(exp);
                     Console.WriteLine("Query 'Winrate Request' failed at '" + winrateQuery[0] + "'. " + Constants.RestartProgram);
                     Console.ReadLine();
+                    return false;
                 }
             }
         }

@@ -129,7 +129,7 @@ namespace Best_Champ_Predictor
                 {
                     string json = r.ReadToEnd();
                     if (json == "NULL\r\n")
-                        return;
+                        continue;
                     Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(json);
                     JObject parsed = JObject.Parse(json);
 
